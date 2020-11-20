@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <Navbar msg="Welcome to Your Vue.js App" />
+        <Header />
+        <Navbar />
         <Content />
     </div>
 </template>
@@ -8,13 +9,14 @@
 <script>
 import Navbar from './components/Navbar.vue';
 import Content from './components/Content.vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Header from './components/Header.vue';
 
 export default {
     name: 'App',
     components: {
         Navbar,
         Content,
+        Header,
     },
 };
 </script>
@@ -38,5 +40,7 @@ body {
         rgba(225, 113, 87, 1) 48%,
         rgba(249, 248, 113, 1) 100%
     );
+    /* display: flex;
+    flex-direction: column; */
 }
 </style>
